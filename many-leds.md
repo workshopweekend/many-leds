@@ -6,37 +6,33 @@ This is significant in that each LED can represent a "bit" and together form an 
 
 ![color-receptivity dim=310h](img/color-responsivity.png "Sensitivity of the red, green, and blue cone cells")
 
-1.  Start with the following circuit. Make sure to orient the LED correctly -- the flat side should be on the left as in the diagram below.
-
-    ![just-the-led dim=400wL](img/just-the-led-please.png "Fritzing for RGB LED with single active channel") ![just-the-led-schematic dim=400wL](img/just-the-led-please-schematic.png "Schematic for RGB LED with single active channel")
-
-2.  The LEDs can be arranged in any color combination you choose. For example, you could emulate a signal meter that is green until you get to a certain level, and then turns red.  
-
-3.  Connect the LED legs to pins 3 through 11 respectively:
+1.  Start with the following circuit. Make sure to orient the LED correctly -- the flat side should be on top as in the diagram below. Connect the LED legs to pins 3 through 11 respectively:
 
     ![legs-connected-to-pins dim=400wL](img/8LEDs.png "Fritzing for LEDs on pins 2 to 9") ![legs-connected-to-pins dim=400wL]    ![legs-connected-to-pins dim=400wL](img/8LEDsSchematic.png "Fritzing for LEDs on pins 2 to 9") ![legs-connected-to-pins dim=400wL]
 
-4.  Write code to turn all the LEDs on, then turn them all off.
+The LEDs can be arranged in any color combination you choose. For example, you could emulate a signal meter that is green until you get to a certain level, and then turns red.  
+
+2.  Write code to turn all the LEDs on, then turn them all off.
     <%= EightLEDsStart.ino =%>
     
-5.  Now turn them on one at a time from one end to the other, and then off one at a time from one end to the other.
+3.  Now turn them on one at a time from one end to the other, and then off one at a time from one end to the other.
 
-6.  Using this code you can create a "Knight Rider" like chase from one end to the other.
+4.  Using this code you can create a "Knight Rider" like chase from one end to the other.
     <%= EightLEDsKnightRider1.ino =%>
     But as you can see, it does not scale well... If you doubled the LEDs you'd double the size of your code, and modifications are tedious.
 
-7.  Instead create an array with containing 8 bits. You can think of an array as a set of drawers (Indexes) numbered 0 through 7. You can then store a 1 or a 0 in each of the indicies... and when you "draw" the array to the set of LEDs they turn on when the index = high (1) or low (0).
+5.  Instead create an array with containing 8 bits. You can think of an array as a set of drawers (Indexes) numbered 0 through 7. You can then store a 1 or a 0 in each of the indicies... and when you "draw" the array to the set of LEDs they turn on when the index = high (1) or low (0).
    <%= EightLEDsKnightRider2.ino =%>
 
-8.  Use `analogRead` on pins `A0` to set the delay values. Note that `analogRead` returns a number between `0` and `1023`.
+6.  Use `analogRead` on pins `A0` to set the delay values. Note that `analogRead` returns a number between `0` and `1023`.
    <%= EightLEDsPotSpeed.ino =%>
 
-9.  Use `analogRead` on pins `A0`, `A1`, respectively, to set the values. Note that `analogRead` returns a number between `0` and `1023`. Divide them by 128 to get values from 0 to 7 from each pin.
+7.  Use `analogRead` on pins `A0`, `A1`, respectively, to set the values. Note that `analogRead` returns a number between `0` and `1023`. Divide them by 128 to get values from 0 to 7 from each pin.
 
-9.  Use the potentiometer to make a level meter... lighting more LEDs as you rotate the potentiometer.
+8.  Use the potentiometer to make a level meter... lighting more LEDs as you rotate the potentiometer.
    <%= EightLEDsPotLevel.ino =%>
 
-10. Modify your code to use [the `map` function](http://arduino.cc/en/Reference/map) to convert the input value to the output value, instead of dividing by 128.
+9. Modify your code to use [the `map` function](http://arduino.cc/en/Reference/map) to convert the input value to the output value, instead of dividing by 128.
 
 
 
