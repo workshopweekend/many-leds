@@ -1,8 +1,6 @@
 # Many LEDs
 
-In this lab, you'll play with LEDs in a multiple of 8. 
-
-This is significant in that each LED can represent a "bit" and together form an 8 bit byte.
+In this lab, you'll play with 8 LEDs in a row. Each LED can represent a "bit" and together form an 8 bit byte. You can use this array to show levels, for example, to show how loud an amplifier is, or to indicate the temperature.
 
 1.  Start with the following circuit. Make sure to orient the LED correctly -- the flat side should be on top as in the diagram below. Connect the LED legs to pins 2 through 9 respectively:
 
