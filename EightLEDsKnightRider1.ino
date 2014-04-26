@@ -103,4 +103,3 @@ void loop() {
    digitalWrite(pin3, LOW);
    delay(timer);
 }
-
