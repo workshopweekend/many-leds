@@ -18,14 +18,14 @@ This is significant in that each LED can represent a "bit" and together form an 
     <%= EightLEDsKnightRider1.ino =%>
 5.  But as you can see, it does not scale well... If you doubled the LEDs you'd double the size of your code, and modifications are tedious.
     Instead create an array with containing 8 bits. You can think of an array as a set of drawers (Indexes) numbered 0 through 7. You can then store a 1 or a 0 in each of the indicies... and when you "draw" the array to the set of LEDs they turn on when the index = high (1) or low (0).
-   <%= EightLEDsKnightRider2.ino =%>
+    <%= EightLEDsKnightRider2.ino =%>
 6.  Use `analogRead` on pins `A0` to set the delay values. Note that `analogRead` returns a number between `0` and `1023`.
-   <%= EightLEDsPotSpeed.ino =%>
+    <%= EightLEDsPotSpeed.ino =%>
 7.  Use `analogRead` on pins `A0`, `A1`, respectively, to set the values. Note that `analogRead` returns a number between `0` and `1023`. Divide them by 128 to get values from 0 to 7 from each pin.
 
 8.  Use the potentiometer to make a level meter... lighting more LEDs as you rotate the potentiometer.
-   <%= EightLEDsPotLevel.ino =%>
-9. Modify your code to use [the `map` function](http://arduino.cc/en/Reference/map) to convert the input value to the output value, instead of dividing by 128.
+    <%= EightLEDsPotLevel.ino =%>
+9.  Modify your code to use [the `map` function](http://arduino.cc/en/Reference/map) to convert the input value to the output value, instead of dividing by 128.
 
 
 ## Challenges:
