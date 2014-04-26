@@ -1,6 +1,5 @@
 // Blink 8 LEDS
 
-
 int Pin0 = 2;   // led0 is connected to digital pin 2
 int Pin1 = 3;   // led1 is connected to digital pin 3
 int Pin2 = 4;   // led2 is connected to digital pin 4
@@ -9,7 +8,6 @@ int Pin4 = 6;   // led4 is connected to digital pin 6
 int Pin5 = 7;   // led5 is connected to digital pin 7
 int Pin6 = 8;   // led6 is connected to digital pin 8
 int Pin7 = 9;   // led7 is connected to digital pin 9
-
 
 void setup()                      
 {
@@ -22,7 +20,6 @@ void setup()
   pinMode (Pin6, OUTPUT);   // sets 6 pin as output
   pinMode (Pin7, OUTPUT);   // sets 7 pin as output
 }
-
 
 void loop()                         //repeats the following steps
 {
