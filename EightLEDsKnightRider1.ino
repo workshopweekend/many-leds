@@ -31,6 +31,7 @@ void setup(){
 }
 
 void loop() {
+   //first set
    digitalWrite(pin2, HIGH);
    delay(timer);
    digitalWrite(pin2, LOW);
@@ -61,7 +62,7 @@ void loop() {
    digitalWrite(pin7, LOW);
    delay(timer);
    
-   
+   // second set
    digitalWrite(pin8, HIGH);
    delay(timer);
    digitalWrite(pin8, LOW);
