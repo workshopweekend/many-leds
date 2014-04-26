@@ -11,7 +11,7 @@
 
 int pinArray[] = {2, 3, 4, 5, 6, 7, 8, 9};
 int count = 0;
-int timer = 100;
+int timer = 10;
 int levelInput = A0;
 
 void setup(){
@@ -19,14 +19,18 @@ void setup(){
   for (count=0;count<8;count++) {
     pinMode(pinArray[count], OUTPUT);
   }
+ // Serial.begin(9600); // use this to activate the Serial Monitor
 }
 
 void loop() {
 int levelValue = analogRead(levelInput)/128;
-  for (count=0;count<levelInput;count++) {
+//Serial.println(levelValue);  // Use this to Debug the pot as needed
+  for (count=0;count<=levelValue;count++) {
    digitalWrite(pinArray[count], HIGH);
+  delay(timer);
   }
-  for (count=levelInput;count<8;count--) {
+  delay(timer);
+  for (count=levelValue;count<8;count++) {
    digitalWrite(pinArray[count], LOW);
    delay(timer);
   }
