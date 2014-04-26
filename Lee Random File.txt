@@ -1,6 +1,20 @@
 This is a test! - Lee
 
+<<<<<<< HEAD
 No it’s not!
 
 Change number 2
 
+=======
+Change number 2
+
+Change number 3!!!!
+
+Change num ber 4
+
+change number 5 is awesome
+
+6 rules
+
+7
+>>>>>>> FETCH_HEAD
