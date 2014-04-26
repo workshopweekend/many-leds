@@ -8,7 +8,7 @@ This is significant in that each LED can represent a "bit" and together form an 
 
     ![legs-connected-to-pins dim=400wL](img/8LEDs.png "Fritzing for LEDs on pins 2 to 9") ![legs-connected-to-pins dim=400wL]    ![legs-connected-to-pins dim=400wL](img/8LEDsSchematic.png "Fritzing for LEDs on pins 2 to 9") ![legs-connected-to-pins dim=400wL]
 
-The LEDs can be arranged in any color combination you choose. For example, you could emulate a signal meter that is green until you get to a certain level, and then turns red.  
+    The LEDs can be arranged in any color combination you choose. For example, you could emulate a signal meter that is green until you get to a certain level, and then turns red.  
 
 2.  Write code to turn all the LEDs on, then turn them all off.
     <%= EightLEDsStart.ino =%>
