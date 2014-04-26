@@ -4,7 +4,7 @@ In this lab, you'll play with LEDs in a multiple of 8.
 
 This is significant in that each LED can represent a "bit" and together form an 8 bit byte.
 
-1.  Start with the following circuit. Make sure to orient the LED correctly -- the flat side should be on top as in the diagram below. Connect the LED legs to pins 3 through 11 respectively:
+1.  Start with the following circuit. Make sure to orient the LED correctly -- the flat side should be on top as in the diagram below. Connect the LED legs to pins 2 through 9 respectively:
 
     ![legs-connected-to-pins dim=400wL](img/8LEDs.png "Fritzing for LEDs on pins 2 to 9") ![legs-connected-to-pins dim=400wL]    ![legs-connected-to-pins dim=400wL](img/8LEDsSchematic.png "Fritzing for LEDs on pins 2 to 9") ![legs-connected-to-pins dim=400wL]
 
