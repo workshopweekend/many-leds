@@ -1,3 +1,3 @@
-# Exploring Color
+# ManyLEDs
 
-Visit [the Workshop Weekend page for this lab](http://workshopweekend.net/arduino/labs/exploring-color).
+Visit [the Workshop Weekend page for this lab](http://workshopweekend.net/arduino/labs/many-LEDs).
