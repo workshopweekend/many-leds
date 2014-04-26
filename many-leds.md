@@ -14,7 +14,7 @@ This is significant in that each LED can represent a "bit" and together form an 
 
 3.  Connect the LED legs to pins 3 through 11 respectively:
 
-    ![legs-connected-to-pins dim=400wL](img/8LEDs.png "Fritzing for LEDs on pins 3 to 11") ![legs-connected-to-pins dim=400wL]    ![legs-connected-to-pins dim=400wL](img/8LEDsSchematic.png "Fritzing for LEDs on pins 3 to 11") ![legs-connected-to-pins dim=400wL]
+    ![legs-connected-to-pins dim=400wL](img/8LEDs.png "Fritzing for LEDs on pins 2 to 9") ![legs-connected-to-pins dim=400wL]    ![legs-connected-to-pins dim=400wL](img/8LEDsSchematic.png "Fritzing for LEDs on pins 2 to 9") ![legs-connected-to-pins dim=400wL]
 
 4.  Write code to turn all the LEDs on, then turn them all off.
     <%= EightLEDsStart.ino =%>
