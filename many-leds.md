@@ -14,7 +14,7 @@ This is significant in that each LED can represent a "bit" and together form an 
 
 3.  Connect the LED legs to pins 3 through 11 respectively:
 
-    ![legs-connected-to-pins dim=400wL](img/8LEDs.png "Fritzing for LEDs on pins 3 to 11") ![legs-connected-to-pins dim=400wL]
+    ![legs-connected-to-pins dim=400wL](img/8LEDs.png "Fritzing for LEDs on pins 3 to 11") ![legs-connected-to-pins dim=400wL]    ![legs-connected-to-pins dim=400wL](img/8LEDsSchematic.png "Fritzing for LEDs on pins 3 to 11") ![legs-connected-to-pins dim=400wL]
 
 4.  Write code to turn all the LEDs on, then turn them all off.
     <%= EightLEDsStart.ino =%>
@@ -25,24 +25,25 @@ This is significant in that each LED can represent a "bit" and together form an 
     <%= EightLEDsKnightRider1.ino =%>
     But as you can see, it does not scale well... If you doubled the LEDs you'd double the size of your code, and modifications are tedious.
 
-6.  Instead create an array with containing 8 bits. You can think of an array as a set of drawers (Indexes) numbered 0 through 7. You can then store a 1 or a 0 in each of the indicies... and when you "draw" the array to the set of LEDs they turn on when the index = high (1) or low (0).
+7.  Instead create an array with containing 8 bits. You can think of an array as a set of drawers (Indexes) numbered 0 through 7. You can then store a 1 or a 0 in each of the indicies... and when you "draw" the array to the set of LEDs they turn on when the index = high (1) or low (0).
    <%= EightLEDsKnightRider2.ino =%>
 
-7.  Use `analogRead` on pins `A0` to set the delay values. Note that `analogRead` returns a number between `0` and `1023`.
+8.  Use `analogRead` on pins `A0` to set the delay values. Note that `analogRead` returns a number between `0` and `1023`.
+   <%= EightLEDsPotSpeed.ino =%>
 
-8.  Use `analogRead` on pins `A0`, `A1`, respectively, to set the values. Note that `analogRead` returns a number between `0` and `1023`. Divide them by 128 to get values from 0 to 7 from each pin.
+9.  Use `analogRead` on pins `A0`, `A1`, respectively, to set the values. Note that `analogRead` returns a number between `0` and `1023`. Divide them by 128 to get values from 0 to 7 from each pin.
 
-9.  Turn all the potentiometers to 0. You should observe the LED off.
+9.  Use the potentiometer to make a level meter... lighting more LEDs as you rotate the potentiometer.
+   <%= EightLEDsPotLevel.ino =%>
 
 10. Modify your code to use [the `map` function](http://arduino.cc/en/Reference/map) to convert the input value to the output value, instead of dividing by 128.
-
-11. Experiment with turning potentiometers to create dark margins on the left and right that get narrower and wider as you turn the pots. 
 
 
 
 ## Challenges:
-1.  Use `random()` or another algorithm to slowly move a single "pixel?"
-2.  Connect a button to a digital input pin.
+1.  Experiment with turning potentiometers to create dark margins on the left and right that get narrower and wider as you turn the pots. 
+2.  Use `random()` or another algorithm to slowly move a single "pixel?"
+3.  Connect a button to a digital input pin.
     - Instead of moving LEDs with the potentiometers, increase the count whenever the button is pressed.
-3.  Look at this version of the code... why do you think they wrote it this way?
+4.  Look at this version of the code... why do you think they wrote it this way?
    <%= EightLEDsKnightRider3Bonus.ino =%>
