@@ -2,11 +2,11 @@
 
 In this lab, you'll play with 8 LEDs in a row. Each LED can represent a "bit" and together form an 8 bit byte. You can use this array to show levels, for example, to show how loud an amplifier is, or to indicate the temperature.
 
-1.  Start with the following circuit. Make sure to orient the LED correctly -- the flat side should be on top as in the diagram below. Connect the LED legs to pins 2 through 9 respectively:
+1.  Start with the following circuit. Make sure to orient the LED correctly -- the flat side should be on top as in the diagram below. Use resistors close in value to 330&Omega;, as shown below. Connect the LED legs to pins 2 through 9 respectively:
 
     ![legs-connected-to-pins dim=400wL](img/8LEDs.png "Fritzing for LEDs on pins 2 to 9") ![legs-connected-to-pins dim=400wL](img/8LEDsSchematic.png "Fritzing for LEDs on pins 2 to 9")
 
-    The LEDs can be arranged in any color combination you choose. For example, you could emulate a signal meter that is green until you get to a certain level, and then turns red.  
+    The LEDs can be arranged in any color combination you choose. For example, you could emulate a signal meter that is green until you get to a certain level, and then turns red.
 
 2.  Write code to turn all the LEDs on, then turn them all off.
     <%= EightLEDsStart.ino =%>
